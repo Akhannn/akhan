@@ -10,7 +10,7 @@ def selection_sort(a):
         a[i], a[q] = a[q], a[i]
 
 a = input('Enter numbers: ').split()
-a = [int(x) for x in a]
+a = [float(x) for x in a]
 selection_sort(a)
 print(a)
 
@@ -25,7 +25,7 @@ def bubbleSort(a):
                 a[i+1] = temp
 
 a = input('Enter numbers: ').split()
-a = [int(x) for x in a]
+a = [float(x) for x in a]
 bubbleSort(a)
 print(a)
 
@@ -39,7 +39,7 @@ def insertionSort(a):
          q = q-1
      a[q]=w
 a = input('Enter numbers: ').split()
-a = [int(x) for x in a]
+a = [float(x) for x in a]
 insertionSort(a)
 print(a)
 
@@ -59,7 +59,7 @@ def quickSort(q, w, h):
     quickSort(q, w, z - 1)
     quickSort(q, z + 1, h)
 a = input('Enter numbers: ').split()
-a = [int(x) for x in a]
+a = [float(x) for x in a]
 size = len(a)
 quickSort(a, 0, size - 1)
 print(a)
